@@ -100,6 +100,6 @@ export const abi = [
   },
 ]
 
-export const address = "0x0dfe3358544e1454b90a851cec1562f92d58b924"
+export const address = "0x2012852409bdEb7457A538368B042e3C5416a47b"
 
 export const contract = new Contract(address, abi)
