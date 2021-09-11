@@ -5,7 +5,7 @@ import { keyframes } from "stitches.config"
 import { useWeb3React } from "@web3-react/core"
 import { InjectedConnector } from "@web3-react/injected-connector"
 import { providers } from "ethers"
-import { contract } from "contract"
+import { contract, address } from "contract"
 import { useEffect, useState } from "react"
 
 enum Action {
@@ -160,7 +160,13 @@ export default function Home() {
         >
           WAGMIGOTCHI
         </Box>
-        &nbsp;Polygon
+        &nbsp;
+        <Box
+          as="a"
+          target="_blank"
+          href={`https://polygonscan.com/address/${address}`}
+          css={{ color: "black", "text-decoration": "none" }}
+          >Polygon</Box>
       </Text>
 
       <Box css={{ display: "flex", alignItems: "center" }}>
