@@ -38,10 +38,10 @@ const float = keyframes({
   "100%": { transform: "translateY(-4px)" },
 })
 
-const injected = new InjectedConnector({ supportedChainIds: [1, 5] })
+const injected = new InjectedConnector({ supportedChainIds: [137] })
 
 const provider = new providers.AlchemyProvider(
-  1,
+  137,
   "hIvTka6DNWSrY6Z9o-XUz1ey6k_lBfJO"
 )
 
@@ -160,6 +160,7 @@ export default function Home() {
         >
           WAGMIGOTCHI
         </Box>
+        &nbsp;Polygon
       </Text>
 
       <Box css={{ display: "flex", alignItems: "center" }}>
@@ -371,7 +372,7 @@ export default function Home() {
           <Box
             as="a"
             target="_blank"
-            href={`https://etherscan.com/tx/${tx}`}
+            href={`https://polygonscan.com/tx/${tx}`}
             css={{ color: "black" }}
           >
             Transaction Link
